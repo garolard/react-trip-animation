@@ -20,6 +20,7 @@ const Trip = ({
   reset,
   tile,
   width,
+  zoom
 }) => {
   const [isBrowser, setIsBrowser] = useState(false);
   const [current, setCurrent] = useState(null);
@@ -235,6 +236,7 @@ const Trip = ({
           touchZoom={false}
           useFlyTo
           zoomControl={false}
+          zoom={zoom}
         >
           <TileLayer
             url={tile}
@@ -260,6 +262,7 @@ Trip.propTypes = {
   reset: PropTypes.bool,
   tile: PropTypes.string,
   width: PropTypes.string,
+  zoom: PropTypes.number
 };
 
 Trip.defaultProps = {
@@ -273,6 +276,7 @@ Trip.defaultProps = {
   reset: true,
   tile: 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png',
   width: '100%',
+  zoom: 13
 };
 
 Trip.mode = {

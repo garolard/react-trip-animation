@@ -51,7 +51,7 @@ Journey.defaultProps = {
   ghostPathDashArray: '4,10',
   ghostPathWeight: 2,
   keepPathOnFinish: true,
-  pathColor: 'red',
+  pathColor: 'azure',
   pathIcon: null,
   pathIconSize: 40,
   pathWeight: 3,
